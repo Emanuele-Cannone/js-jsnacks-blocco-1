@@ -5,15 +5,10 @@
 var parola1 = prompt('inserisci la prima parola');
 var parola2 = prompt('inserisci la seconda parola');
 
-var valoreParola1 = parola1.length;
-var valoreParola2 = parola2.length;
+var message = parola2 + ' è più grande di ' + parola1;
 
-console.log(valoreParola1, valoreParola2);
-
-if(valoreParola1 > valoreParola2){
-  var message = parola1 + ' ' + parola2;
-} else {
-  var message = parola2 + ' ' + parola1;
-}
+if(parola1.length > parola2.length){
+  message = parola1 + ' è più grande di ' + parola2;
+} 
 
 console.log(message);
